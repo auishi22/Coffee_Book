@@ -7,7 +7,7 @@ const MainPage = () => {
   return (
     <div>
       {/* Navbar */}
-      <div className="px-20 py-2 shadow-sm shadow-gray-50-50 backdrop-blur bg-yellow-50/5">
+      <div className=" mb-10">
         <Navbar />
       </div>
       {/* Dynamic section */}
