@@ -45,15 +45,11 @@ const Navbar = () => {
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="flex gap-6 font-medium px-1">
-          <li className="border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none">
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li className="border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none">
-            <NavLink to="/coffees">Coffees</NavLink>
-          </li>
-          <li className="border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none">
-            <NavLink to="/dashboard">Dashboard</NavLink>
-          </li>
+          
+            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400  ${isActive ? 'bg-yellow-300 text-white font-bold border-yellow-500' : 'hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none' }`} to="/">Home</NavLink>
+            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none ${isActive ? 'bg-yellow-300 text-white font-bold border-yellow-500' : '' }`} to="/coffees">Coffees</NavLink>
+            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none ${isActive ? '  *-bg-yellow-300 text-white font-bold border-yellow-500' : '' }`} to="/dashboard">Dashboard</NavLink>
+          
         </ul>
       </div>
     </div>
