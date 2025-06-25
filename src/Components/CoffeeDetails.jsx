@@ -85,3 +85,4 @@ const CoffeeDetails = () => {
 };
 
 export default CoffeeDetails;
+  

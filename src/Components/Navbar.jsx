@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -46,9 +45,9 @@ const Navbar = () => {
       <div className="navbar-end hidden lg:flex">
         <ul className="flex gap-6 font-medium px-1">
           
-            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400  ${isActive ? 'bg-yellow-300 text-white font-bold border-yellow-500' : 'hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none' }`} to="/">Home</NavLink>
-            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none ${isActive ? 'bg-yellow-300 text-white font-bold border-yellow-500' : '' }`} to="/coffees">Coffees</NavLink>
-            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400 hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none ${isActive ? '  *-bg-yellow-300 text-white font-bold border-yellow-500' : '' }`} to="/dashboard">Dashboard</NavLink>
+            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400   ${isActive ? 'bg-yellow-300 text-yellow-600 font-bold border-yellow-600' : 'hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none' }`} to="/">Home</NavLink>
+            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400  ${isActive ? 'bg-yellow-300 text-yellow-600 font-bold border-yellow-600' : 'hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none' }`} to="/coffees">Coffees</NavLink>
+            <NavLink className={({isActive})=>`border px-6 py-2 rounded-xl border-yellow-400 text-yellow-400  ${isActive ? 'bg-yellow-300 text-yellow-600 font-bold border-yellow-600' : 'hover:bg-yellow-50 hover:text-yellow-500 hover:font-bold hover:border-none' }`} to="/dashboard">Dashboard</NavLink>
           
         </ul>
       </div>
